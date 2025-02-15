@@ -144,3 +144,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+document.getElementById("contact-form").addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent default form redirect
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { "Accept": "application/json" }
+        });
+
+        if (response.ok) {
+            document.getElementById("form-status").textContent = "Message Sent Successfully!";
+            form.reset(); // Clear form fields
+        } else {
+            document.getElementById("form-status").textContent = "Error sending message. Try again.";
+        }
+    } catch (error) {
+        document.getElementById("form-status").textContent = "Network error. Check your connection.";
+    }
+});
+

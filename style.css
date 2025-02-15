@@ -941,3 +941,20 @@ form button:hover {
 }
 
 /* Ensure sidebar stays consist
+ent with the rest of the design */
+#sidebar {
+    padding: 1rem;
+    font-size: 16px;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh; /* Full screen height */
+}
+
+#main {
+    flex: 1; /* Takes remaining space */
+    overflow-y: auto; /* Make it scrollable */
+    padding: 20px;
+}

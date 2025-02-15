@@ -58,12 +58,20 @@
             <div class="glass-content">
                 <h1>Contact Me</h1>
                 <p>Let's connect! Feel free to reach out for collaborations or inquiries.</p>
-                <form action="https://formspree.io/f/example" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
+                <form id="contact-form" action="https://formspree.io/f/mgvonojj" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                
                     <button type="submit">Send Message</button>
+                    <p id="form-status"></p>
                 </form>
+                
 
                 <!-- Social Media Links -->
                 <div id="socials" class="socials">
