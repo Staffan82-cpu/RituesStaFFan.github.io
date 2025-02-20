@@ -1226,3 +1226,75 @@ ent with the rest of the design */
 .cta-button:hover {
     background: #ff4b4b;
 }
+/* General mobile-friendly settings */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Make sidebar collapsible on mobile */
+#sidebar {
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Ensure main content adapts on smaller screens */
+#main {
+    width: 100%;
+    padding: 20px;
+}
+
+/* Responsive sidebar for mobile */
+@media (max-width: 768px) {
+    #sidebar {
+        position: fixed;
+        left: -250px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(10px);
+        transition: 0.3s ease-in-out;
+    }
+
+    #sidebar.open {
+        left: 0;
+    }
+
+    /* Sidebar button */
+    .sidebar-toggle {
+        display: block;
+        position: fixed;
+        left: 15px;
+        top: 15px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 100;
+    }
+}
+
+/* Adjust glass container on smaller screens */
+@media (max-width: 768px) {
+    .glass-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Glass buttons responsive */
+.glass-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+}
+
+/* Fix dynamic box animations on mobile */
+@media (max-width: 768px) {
+    .box {
+        width: 20px;
+        height: 20px;
+    }
+}
