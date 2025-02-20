@@ -196,7 +196,7 @@ body {
 }
 
 .glass-content p {
-    font-size: 1.2rem;
+    font-size: 1.30rem;
     color: #d4d4d4;
     margin-bottom: 2rem;
 }
@@ -885,7 +885,7 @@ form button:hover {
 /* Ensure submenu dropdown works smoothly */
 .folder.active + .submenu {
     display: block;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: fadeIn 0.6s ease-in-out;
 }
 
 /* Matching fade-in animation */
@@ -913,7 +913,7 @@ form button:hover {
 
 .glass-button:hover {
     background: rgba(255, 255, 255, 0.2);
-    transform: scale(1.05);
+    transform: scale(4.05);
 }
 
 /* Social Media Links - Uniform Style */
