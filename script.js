@@ -167,4 +167,52 @@ document.getElementById("contact-form").addEventListener("submit", async functio
         document.getElementById("form-status").textContent = "Network error. Check your connection.";
     }
 });
+function showCategory(category) {
+    document.querySelectorAll('.skills-list').forEach(el => el.classList.add('hidden'));
+    document.getElementById(category).classList.remove('hidden');
 
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`[onclick="showCategory('${category}')"]`).classList.add('active');
+}
+
+function showExperience(category) {
+    document.querySelectorAll('.experience-list').forEach(el => el.classList.add('hidden'));
+    document.getElementById(category).classList.remove('hidden');
+
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`[onclick="showExperience('${category}')"]`).classList.add('active');
+}
+
+function showMLSection(category) {
+    document.querySelectorAll('.ml-section').forEach(el => el.classList.add('hidden'));
+    document.getElementById(category).classList.remove('hidden');
+
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`[onclick="showMLSection('${category}')"]`).classList.add('active');
+}
+function showService(category) {
+    document.querySelectorAll('.service-list').forEach(el => el.classList.add('hidden'));
+    document.getElementById(category).classList.remove('hidden');
+
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+    document.querySelector(`[onclick="showService('${category}')"]`).classList.add('active');
+}
+// Filter Web Dev Skills by Category
+function filterCategory(category) {
+    document.querySelectorAll('.skill-card').forEach(card => {
+        if (card.classList.contains(category)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    document.querySelectorAll('.tab-button').forEach(button => button.classList.remove('active'));
+    document.querySelector(`button[onclick="filterCategory('${category}')"]`).classList.add('active');
+}
+
+// Smooth Scroll to Contact Section
+document.querySelector('.cta-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.querySelector("#contact").scrollIntoView({ behavior: "smooth" });
+});

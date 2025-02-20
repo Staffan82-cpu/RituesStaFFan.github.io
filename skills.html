@@ -61,58 +61,95 @@
                 <div class="glass-container">
                     <div class="glass-content">
                         <h1>My Skills</h1>
-                        <div class="skills-list">
-                            <!-- Skill: HTML -->
+                        
+                        <!-- Tabs for Categories -->
+                        <div class="tabs">
+                            <button class="tab active" onclick="showCategory('languages')">Languages</button>
+                            <button class="tab" onclick="showCategory('frameworks')">Frameworks</button>
+                            <button class="tab" onclick="showCategory('tools')">Tools</button>
+                        </div>
+            
+                        <!-- Skills Content -->
+                        <div class="skills-list" id="languages">
                             <div class="skill">
                                 <div class="skill-icon">
                                     <img src="icons/html.png" alt="HTML5">
                                 </div>
                                 <div class="skill-details">
                                     <p>HTML5</p>
-                                    <div class="skill-bar">
-                                        <div class="progress-90"></div>
-                                    </div>
+                                    <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div>
                                 </div>
                             </div>
-                            
-                            <!-- Skill: CSS -->
+            
                             <div class="skill">
                                 <div class="skill-icon">
                                     <img src="icons/css.png" alt="CSS3">
                                 </div>
                                 <div class="skill-details">
                                     <p>CSS3</p>
-                                    <div class="skill-bar">
-                                        <div class="progress-85"></div>
-                                    </div>
+                                    <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div>
                                 </div>
                             </div>
-
-                            <!-- Skill: JavaScript -->
+            
                             <div class="skill">
                                 <div class="skill-icon">
                                     <img src="icons/js.png" alt="JavaScript">
                                 </div>
                                 <div class="skill-details">
                                     <p>JavaScript</p>
-                                    <div class="skill-bar">
-                                        <div class="progress-80"></div>
-                                    </div>
+                                    <div class="skill-bar"><div class="progress" style="width: 80%;"></div></div>
                                 </div>
                             </div>
-
-                            <!-- Skill: Python -->
+                        </div>
+            
+                        <div class="skills-list hidden" id="frameworks">
                             <div class="skill">
                                 <div class="skill-icon">
-                                    <img src="icons/python.png" alt="Python">
+                                    <img src="icons/react.png" alt="React">
                                 </div>
                                 <div class="skill-details">
-                                    <p>Python</p>
-                                    <div class="skill-bar">
-                                        <div class="progress-75"></div>
-                                    </div>
+                                    <p>React.js</p>
+                                    <div class="skill-bar"><div class="progress" style="width: 85%;"></div></div>
                                 </div>
                             </div>
+            
+                            <div class="skill">
+                                <div class="skill-icon">
+                                    <img src="icons/nodejs.png" alt="Node.js">
+                                </div>
+                                <div class="skill-details">
+                                    <p>Node.js</p>
+                                    <div class="skill-bar"><div class="progress" style="width: 75%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="skills-list hidden" id="tools">
+                            <div class="skill">
+                                <div class="skill-icon">
+                                    <img src="icons/git.png" alt="Git">
+                                </div>
+                                <div class="skill-details">
+                                    <p>Git</p>
+                                    <div class="skill-bar"><div class="progress" style="width: 90%;"></div></div>
+                                </div>
+                            </div>
+            
+                            <div class="skill">
+                                <div class="skill-icon">
+                                    <img src="icons/docker.png" alt="Docker">
+                                </div>
+                                <div class="skill-details">
+                                    <p>Docker</p>
+                                    <div class="skill-bar"><div class="progress" style="width: 70%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </div>
+            
                         </div>
                     </div>
                 </div>

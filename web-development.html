@@ -61,13 +61,68 @@
                 <div class="glass-container">
                     <div class="glass-content">
                         <h1>Web Development</h1>
-                        <p>xpertise in full-stack web solutions, focusing on performance and scalability.</p>
-                        <ul>
-                            <li><strong>Frontend:</strong> React.js, Next.js, Vue.js, TypeScript, Tailwind CSS.</li>
-                            <li><strong>Backend:</strong> Node.js, Express.js, Django, Flask, Spring Boot.</li>
-                            <li><strong>Database:</strong> PostgreSQL, MongoDB, Firebase, Redis.</li>
-                            <li>SEO Optimization</li>
-                            <li>Web App Development</li>
+                        <div class="category-tabs">
+                            <button class="tab-button active" onclick="filterCategory('frontend')">Frontend</button>
+                            <button class="tab-button" onclick="filterCategory('backend')">Backend</button>
+                            <button class="tab-button" onclick="filterCategory('fullstack')">Full-Stack</button>
+                            <button class="tab-button" onclick="filterCategory('devops')">DevOps</button>
+                        </div>
+            
+                        <!-- Web Development Skills Section -->
+                        <div class="skills-container">
+                            <div class="skill-card frontend">
+                                <img src="icons/react.png" alt="React">
+                                <h3>React.js</h3>
+                                <p>Building dynamic & interactive UI with React and Next.js.</p>
+                            </div>
+            
+                            <div class="skill-card frontend">
+                                <img src="icons/vue.png" alt="Vue.js">
+                                <h3>Vue.js</h3>
+                                <p>Creating fast and scalable SPAs with Vue.</p>
+                            </div>
+            
+                            <div class="skill-card backend">
+                                <img src="icons/node.png" alt="Node.js">
+                                <h3>Node.js</h3>
+                                <p>Building scalable backend services and RESTful APIs.</p>
+                            </div>
+            
+                            <div class="skill-card backend">
+                                <img src="icons/django.png" alt="Django">
+                                <h3>Django</h3>
+                                <p>Secure & efficient backend solutions with Django.</p>
+                            </div>
+            
+                            <div class="skill-card fullstack">
+                                <img src="icons/nextjs.png" alt="Next.js">
+                                <h3>Next.js</h3>
+                                <p>Full-stack React framework for SEO-friendly applications.</p>
+                            </div>
+            
+                            <div class="skill-card fullstack">
+                                <img src="icons/express.png" alt="Express.js">
+                                <h3>Express.js</h3>
+                                <p>Lightweight, fast backend development with Express.</p>
+                            </div>
+            
+                            <div class="skill-card devops">
+                                <img src="icons/docker.png" alt="Docker">
+                                <h3>Docker</h3>
+                                <p>Containerization for seamless deployment.</p>
+                            </div>
+            
+                            <div class="skill-card devops">
+                                <img src="icons/kubernetes.png" alt="Kubernetes">
+                                <h3>Kubernetes</h3>
+                                <p>Scaling and managing microservices efficiently.</p>
+                            </div>
+                        </div>
+            
+                        <!-- Call to Action -->
+                        <div class="cta">
+                            <p>Need a custom-built web solution? Let's build something amazing together!</p>
+                            <a href="#contact" class="cta-button">Get in Touch</a>
                         </ul>
                     </div>
                 </div>

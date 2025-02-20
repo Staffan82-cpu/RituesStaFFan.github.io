@@ -60,13 +60,52 @@
                     <div class="glass-content">
                         <h1>Machine Learning Solutions</h1>
                         <p>Building intelligent solutions with AI-powered automation.</p>
-                        <ul>
-                            <li><strong>Frameworks:</strong> TensorFlow, PyTorch, Scikit-Learn, MLflow.</li>
-                            <li><strong>Applications:</strong> NLP, Chatbots, Recommendation Systems, Predictive Analytics.</li>
-                            <li><strong>Deployment:</strong> Docker, Kubernetes, AWS Lambda.</li>
-                            <li><strong>Deployment:</strong> Docker, Kubernetes, AWS Lambda.</li>
-                            <li><strong>Deployment:</strong> Docker, Kubernetes, AWS Lambda.</li>
-                        </ul>
+                        <div class="tabs">
+                            <button class="tab active" onclick="showMLSection('frameworks')">Frameworks & Tools</button>
+                            <button class="tab" onclick="showMLSection('applications')">Applications</button>
+                            <button class="tab" onclick="showMLSection('deployment')">Model Deployment</button>
+                            <button class="tab" onclick="showMLSection('research')">Research & Innovations</button>
+                        </div>
+            
+                        <!-- Frameworks & Tools -->
+                        <div class="ml-section" id="frameworks">
+                            <h2>Frameworks & Tools</h2>
+                            <ul>
+                                <li><strong>Deep Learning:</strong> TensorFlow, PyTorch, Keras</li>
+                                <li><strong>Traditional ML:</strong> Scikit-Learn, XGBoost, LightGBM</li>
+                                <li><strong>Experiment Tracking:</strong> MLflow, Weights & Biases</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Applications -->
+                        <div class="ml-section hidden" id="applications">
+                            <h2>Applications</h2>
+                            <ul>
+                                <li><strong>Natural Language Processing (NLP):</strong> Chatbots, Sentiment Analysis, Transformers</li>
+                                <li><strong>Computer Vision:</strong> Object Detection, Face Recognition</li>
+                                <li><strong>Recommendation Systems:</strong> Personalized Recommendations</li>
+                                <li><strong>Predictive Analytics:</strong> Time-Series Forecasting, Fraud Detection</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Model Deployment -->
+                        <div class="ml-section hidden" id="deployment">
+                            <h2>Model Deployment</h2>
+                            <ul>
+                                <li><strong>Containers:</strong> Docker, Kubernetes</li>
+                                <li><strong>Cloud Services:</strong> AWS Lambda, Google Cloud AI</li>
+                                <li><strong>Scaling:</strong> TensorFlow Serving, FastAPI</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Research & Innovations -->
+                        <div class="ml-section hidden" id="research">
+                            <h2>Research & Innovations</h2>
+                            <ul>
+                                <li><strong>Publications:</strong> Research Papers on AI Ethics, GANs</li>
+                                <li><strong>Open Source:</strong> Contributions to ML Libraries</li>
+                                <li><strong>AI Ethics:</strong> Bias Reduction in AI Models</li>
+                            </ul>
                     </div>
                 </div>
             </div>

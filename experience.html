@@ -61,46 +61,98 @@
                 <div class="glass-container">
                     <div class="glass-content">
                         <h1>My Experience</h1>
-                        <p>Throughout my career, I've gained experience in various fields such as marketing, leading software development projects, and system knowledge. Below, you'll find details on each area of expertise.</p>
 
-                        <div class="experience-container">
-                            <!-- Marketing Experience -->
-                            <div class="experience-card">
-                                <div class="experience-title">Marketing</div>
-                                <div class="experience-description">
-                                    With over 5 years of experience in marketing, I have worked with cross-functional teams to develop and execute strategic marketing campaigns, both digital and traditional.
-                                </div>
-                                <div class="experience-level">Experience Level: Expert</div>
-                                <div class="experience-level-bar">
-                                    <div class="marketing"></div>
-                                </div>
-                            </div>
 
-                            <!-- Project Leadership Experience -->
-                            <div class="experience-card">
-                                <div class="experience-title">Project Leadership</div>
-                                <div class="experience-description">
-                                    Leading software development projects has been a major part of my role. From initial planning to execution, I ensure smooth communication and task delegation to deliver projects on time.
-                                </div>
-                                <div class="experience-level">Experience Level: Advanced</div>
-                                <div class="experience-level-bar">
-                                    <div class="project-leadership"></div>
-                                </div>
-                            </div>
+                         <!-- Tabs for Experience Categories -->
 
-                            <!-- System Knowledge Experience -->
-                            <div class="experience-card">
-                                <div class="experience-title">System Knowledge</div>
-                                <div class="experience-description">
-                                    I have gained deep understanding of software systems, databases, and integration patterns, enabling me to contribute significantly to system architecture and optimization.
-                                </div>
-                                <div class="experience-level">Experience Level: Intermediate</div>
-                                <div class="experience-level-bar">
-                                    <div class="systems-knowledge"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="tabs">
+
+                <button class="tab active" onclick="showExperience('work')">Work Experience</button>
+                <button class="tab" onclick="showExperience('freelance')">Freelance & Open Source</button>
+                <button class="tab" onclick="showExperience('projects')">Projects</button>
+                <button class="tab" onclick="showExperience('education')">Education</button>
+            </div>
+
+            <!-- Work Experience -->
+            <div class="experience-list" id="work">
+                <div class="experience">
+                    <h3>Full-Stack Developer</h3>
+                    <p>XYZ Company | 2022 - Present</p>
+                    <ul>
+                        <li>Developed and maintained web applications using React and Django.</li>
+                        <li>Improved API performance by 40% by optimizing backend architecture.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Software Engineer Intern</h3>
+                    <p>ABC Tech | 2021 - 2022</p>
+                    <ul>
+                        <li>Worked on AI-powered chatbots using Python and TensorFlow.</li>
+                        <li>Implemented REST APIs for customer data processing.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Freelance & Open Source -->
+            <div class="experience-list hidden" id="freelance">
+                <div class="experience">
+                    <h3>Freelance Web Developer</h3>
+                    <p>Upwork & Fiverr | 2020 - Present</p>
+                    <ul>
+                        <li>Completed 20+ projects, including e-commerce websites and dashboards.</li>
+                        <li>Built custom CMS solutions for clients.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Open Source Contributor</h3>
+                    <p>GitHub | Various Projects</p>
+                    <ul>
+                        <li>Contributed to React, Vue, and Django-based projects.</li>
+                        <li>Developed reusable UI components and improved documentation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Personal & Side Projects -->
+            <div class="experience-list hidden" id="projects">
+                <div class="experience">
+                    <h3>NeDash (Personal Game App)</h3>
+                    <p>2024 - Present</p>
+                    <ul>
+                        <li>Developing a futuristic neon-themed snake game.</li>
+                        <li>Built with C# and hosted on my portfolio website.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>CodeFlow Pro (Browser Extension)</h3>
+                    <p>2023 - Present</p>
+                    <ul>
+                        <li>Designed a smart to-do & task management extension.</li>
+                        <li>Integrated GitHub API and AI-powered reminders.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Education & Certifications -->
+            <div class="experience-list hidden" id="education">
+                <div class="experience">
+                    <h3>Bachelor’s Degree in Computer Science</h3>
+                    <p>XYZ University | 2018 - 2022</p>
+                    <ul>
+                        <li>Specialized in Machine Learning & Full-Stack Development.</li>
+                        <li>Built an AI-powered chatbot as a final-year project.</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <h3>Google Cloud Certification</h3>
+                    <p>Certified in Cloud Engineering | 2023</p>
+                    <ul>
+                        <li>Learned cloud deployment, CI/CD, and serverless architecture.</li>
+                    </ul>
                 </div>
             </div>
         </div>

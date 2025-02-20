@@ -61,18 +61,78 @@
                 <div class="glass-container">
                     <div class="glass-content">
                         <h1>Servicess</h1>
-                        <p>I specialize in full-stack development, AI/ML solutions, and scalable cloud architecture.</p>
-                        <p>Full-Stack Development: Expertise in front-end and back-end development with React, Next.js, Node.js, and Django.</p>
-                        <p>Database Management: Efficient data handling with PostgreSQL, MongoDB, and Firebase.</p>
-                        <p>AI & Machine Learning: Experience in NLP, chatbot development, and predictive analytics.</p>
-                        <p>Cloud & DevOps: Proficient in AWS, Kubernetes, Docker, and CI/CD pipelines.</p>
-                        <p>API Development: RESTful and GraphQL API design for seamless integration.</p>
-                        <p>UI/UX Design: Creating intuitive, user-friendly interfaces with modern design principles.</p>
-                        <p>Performance Optimization: Enhancing application speed and scalability using caching, load</p>
-                        <p>Security Best Practices: Implementing authentication, authorization, and data encryption techniques.</p>
-                        <p>Version Control & Collaboration: Git, GitHub, and GitLab for streamlined development workflows.</p>
-                        <p>Agile & Scrum Methodologies: Experienced in iterative development, sprint planning, and team collaboration.</p>
-                        
+                        <  <!-- Tabs for Service Categories -->
+                        <div class="tabs">
+                            <button class="tab active" onclick="showService('fullstack')">Full-Stack Development</button>
+                            <button class="tab" onclick="showService('ai')">AI & Machine Learning</button>
+                            <button class="tab" onclick="showService('cloud')">Cloud & DevOps</button>
+                            <button class="tab" onclick="showService('database')">Database Management</button>
+                            <button class="tab" onclick="showService('api')">API & Security</button>
+                            <button class="tab" onclick="showService('uiux')">UI/UX & Performance</button>
+                            <button class="tab" onclick="showService('agile')">Agile & Collaboration</button>
+                        </div>
+            
+                        <!-- Full-Stack Development -->
+                        <div class="service-list" id="fullstack">
+                            <h2>Full-Stack Development</h2>
+                            <ul>
+                                <li>Expertise in front-end and back-end development with **React, Next.js, Node.js, Django**.</li>
+                                <li>Building scalable and high-performance web applications.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- AI & Machine Learning -->
+                        <div class="service-list hidden" id="ai">
+                            <h2>AI & Machine Learning</h2>
+                            <ul>
+                                <li>Developing **NLP solutions**, chatbots, and recommendation systems.</li>
+                                <li>Building AI-powered **predictive analytics** solutions.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Cloud & DevOps -->
+                        <div class="service-list hidden" id="cloud">
+                            <h2>Cloud & DevOps</h2>
+                            <ul>
+                                <li>Expert in **AWS, Kubernetes, Docker**, and CI/CD pipelines.</li>
+                                <li>Ensuring scalability and security of cloud-hosted applications.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Database Management -->
+                        <div class="service-list hidden" id="database">
+                            <h2>Database Management</h2>
+                            <ul>
+                                <li>Efficient data handling with **PostgreSQL, MongoDB, Firebase**.</li>
+                                <li>Designing database schemas for optimized performance.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- API & Security -->
+                        <div class="service-list hidden" id="api">
+                            <h2>API & Security</h2>
+                            <ul>
+                                <li>Building **RESTful and GraphQL APIs** for seamless integration.</li>
+                                <li>Implementing **authentication, authorization, and encryption** for security.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- UI/UX & Performance -->
+                        <div class="service-list hidden" id="uiux">
+                            <h2>UI/UX & Performance Optimization</h2>
+                            <ul>
+                                <li>Creating intuitive, user-friendly **UI/UX designs**.</li>
+                                <li>Enhancing application speed using **caching and load balancing**.</li>
+                            </ul>
+                        </div>
+            
+                        <!-- Agile & Collaboration -->
+                        <div class="service-list hidden" id="agile">
+                            <h2>Agile & Collaboration</h2>
+                            <ul>
+                                <li>Version control with **Git, GitHub, GitLab**.</li>
+                                <li>Experienced in **Agile methodologies, Scrum, and sprint planning**.</li>
+                            </ul>
                     </div>
                 </div>
             </div>
