@@ -1272,29 +1272,47 @@ body, html {
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
-        z-index: 100;
+        z-index: 1000; /* Increased z-index to be above glass container */
+    }
+
+    #sidebar {
+        z-index: 999; /* Increased z-index to be above glass container */
+    }
+
+    .glass-container {
+        z-index: 998; /* Lower z-index than sidebar */
     }
 }
 
-/* Adjust glass container on smaller screens */
+/* Mobile-friendly glass container adjustments */
 @media (max-width: 768px) {
     .glass-container {
-        width: 90%;
+        width: 95%;
+        max-width: none;
+        height: auto;
+        min-height: 300px;
+        margin: 10px auto;
         padding: 15px;
+        border-radius: 10px;
+    }
+
+    .glass-container .glass-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .glass-container .glass-content p {
+        font-size: 1rem;
     }
 }
 
-/* Glass buttons responsive */
-.glass-button {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
-}
+@media (max-width: 480px) {
+    .glass-container {
+        width: 98%;
+        padding: 10px;
+        margin: 5px auto;
+    }
 
-/* Fix dynamic box animations on mobile */
-@media (max-width: 768px) {
-    .box {
-        width: 20px;
-        height: 20px;
+    .glass-container .glass-content h1 {
+        font-size: 1.5rem;
     }
 }

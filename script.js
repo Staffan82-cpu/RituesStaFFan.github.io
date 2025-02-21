@@ -219,3 +219,24 @@ document.querySelector('.cta-button').addEventListener('click', function(event) 
 function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("open");
 }
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const menuToggle = document.createElement("div");
+    menuToggle.id = "menu-toggle";
+    menuToggle.innerHTML = `<span></span><span></span><span></span>`;
+    document.body.appendChild(menuToggle);
+
+    // Toggle sidebar on menu button click
+    menuToggle.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!sidebar.contains(event.target) && !menuToggle.contains(event.target)) {
+            sidebar.classList.remove("active");
+            menuToggle.classList.remove("active");
+        }
+    });
+});
