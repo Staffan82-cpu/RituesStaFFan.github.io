@@ -1316,3 +1316,58 @@ body, html {
         font-size: 1.5rem;
     }
 }
+/* Ensure glass container adapts properly on mobile */
+@media (max-width: 768px) {
+    .glass-container {
+        width: 95%;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make timeline responsive */
+    .timeline {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .timeline-content {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Adjust skill cards on mobile */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .skill-card {
+        width: 45%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Call-to-action button responsiveness */
+    .cta {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cta-button {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
