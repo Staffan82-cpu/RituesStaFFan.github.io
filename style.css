@@ -1370,4 +1370,21 @@ body, html {
         text-align: center;
     }
 }
+/* Style for ChatRoom1.3 button */
+#chatroom-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#chatroom-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
 
